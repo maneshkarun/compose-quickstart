@@ -1,0 +1,21 @@
+sources:
+- description: Dataframes Mage upstream blocks
+  loader: mage
+  name: mage_producthunt_dbt
+  schema: dbt_producthunt
+  tables:
+  - description: Dataframe for block `gcs_to_bigquery_products` of the `producthunt_etl`
+      mage pipeline.
+    identifier: mage_producthunt_etl_gcs_to_bigquery_products
+    meta:
+      block_uuid: gcs_to_bigquery_products
+      pipeline_uuid: producthunt_etl
+    name: producthunt_etl_gcs_to_bigquery_products
+  - description: Dataframe for block `dag_connector_block` of the `producthunt_products_etl`
+      mage pipeline.
+    identifier: mage_producthunt_products_etl_dag_connector_block
+    meta:
+      block_uuid: dag_connector_block
+      pipeline_uuid: producthunt_products_etl
+    name: producthunt_products_etl_dag_connector_block
+version: 2
